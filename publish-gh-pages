@@ -9,6 +9,8 @@ git checkout master -- \
   '*.png' \
   _config.yml \
 ;
+touch .nojekyll
+echo 'submodules' > .gitignore
 cp out/README.html index.html
 cp out/doc/* .
 mv README.html index-split.html
